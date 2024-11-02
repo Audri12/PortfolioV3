@@ -1,0 +1,14 @@
+.gradient-border-b {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .gradient-border-b::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the border */
+    background: linear-gradient(to right, #5411ff, #b000c3); /* Indigo-500 to Pink-500 */
+  }

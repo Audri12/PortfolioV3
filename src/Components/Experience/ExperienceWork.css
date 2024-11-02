@@ -1,0 +1,44 @@
+.MobbileCIB{
+    background-image: url("../../assets/Gradient.png");
+    background-repeat: repeat-y;
+    background-color: black;
+    background-position: center ;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.background{
+    background-image: url("../../assets/Rectangle\ 983.png");
+  
+    background-position: center ;
+    
+    height: 100%;
+    width: 100%;
+    
+}
+
+.experience-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .experience-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    color: black; /* Black color inside the text */
+  }
+  
+  .experience-text-outline {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    color: transparent; /* Transparent fill */
+    -webkit-text-stroke: 5px #404040; /* Thin gray border */
+  }

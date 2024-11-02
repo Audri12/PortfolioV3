@@ -1,0 +1,39 @@
+.about-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .about-text {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    color: black; /* Black color inside the text */
+  }
+  
+  .about-text-outline {
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    color: transparent; /* Transparent fill */
+    -webkit-text-stroke: 5px #404040; /* Thin gray border */
+  }
+  
+  /* Custom media query in index.css or any other CSS file */
+
+  
+  /* @media (max-width: 400px) {
+    .about-text,
+    .about-text-outline {
+      font-size: 12vw;
+      -webkit-text-stroke: 0.2vw #404040;
+    }
+  } */
+
+  
+  

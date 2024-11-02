@@ -1,0 +1,14 @@
+.homebanner{
+    background-image: url("https://i.postimg.cc/1zKM7cqn/Group-12.png");
+    background-repeat: repeat-y;
+    background-position:center 40%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: multiply;
+    position: relative;
+
+}
+
+ 
+  

@@ -1,0 +1,19 @@
+.textt {
+    background-image: url(../../assets/Card.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  .card2 {
+    background-image: url(../../assets/Card1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+
+  .gradient1 {
+    background-image: url(../../assets/Group1944.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
