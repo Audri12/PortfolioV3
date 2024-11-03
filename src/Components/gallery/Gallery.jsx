@@ -15,10 +15,10 @@ const Gallery = () => {
 
     return (
         <div className="bg-black">
-            <div className="font-aldrich pb-12 flex justify-center items-center bg-black">
+            <div className="font-aldrich pb-12 flex justify-center items-center bg-black px-[5%]">
         
          
-          <h2 className="text-4xl pt-32 md:text-6xl font-bold uppercase tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-[#5411ff] to-[#b000c3]">
+          <h2 className="text-4xl pt-32  pb-10 md:text-6xl font-bold uppercase tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-[#5411ff] to-[#b000c3]">
           Gallery
           </h2>
        

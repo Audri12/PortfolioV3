@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div>
          <div className='getintouch bg-black' id='contact'>
-      <div className="min-h-[600px] md:min-h-[1200px] flex justify-center items-center py-10 md:py-20">
-        <div className="max-w-[1150px] w-full bg-gradient-to-r from-[#D500EC33] to-[#5101F833] p-5 md:p-10 rounded-lg shadow-lg">
+      <div className="  flex justify-center items-center px-[5%] py-10 md:py-20">
+        <div className="max-w-[1150px] w-full bg-gradient-to-r from-[#D500EC33] to-[#5101F833] md:p-10 rounded-lg shadow-lg">
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-4 md:px-24 mt-8">
             {/* Left Section */}

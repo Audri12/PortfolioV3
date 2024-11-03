@@ -4,7 +4,7 @@ import './Experience.css'
 const Experience = () => {
   return (
     <div>
-      <div className="justify-center pt-28 font-aldrich pb-12  bg-black  text-white">
+      <div className="justify-center pt-10 font-aldrich pb-12  bg-black  text-white">
 
         
 
@@ -15,7 +15,7 @@ const Experience = () => {
   <h1 className="text-4xl mr-8 cursor-pointer py-2">Skills</h1>
 </div> */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 px-[4%]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 ">
           {/* Experience Section */}
           <div className="text-white">
             <h2 className="text-3xl font-bold mb-6">Experience</h2>

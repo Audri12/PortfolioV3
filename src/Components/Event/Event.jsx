@@ -19,7 +19,7 @@ const Project = () => {
             <h2 className="text-4xl font-bold text-[#CCD6F6]">
               Example Project
             </h2>
-            <div className="textt p-8 relative w-[350px] lg:w-[100%] z-10">
+            <div className="textt p-8 relative w-[350px] lg:w-[100%] z-10  ">
               <p className="  text-[#CCD6F6] text-justify ">
                 A web app for visualizing personalized Spotify data. View your
                 top artists, top tracks, recently played tracks, and detailed

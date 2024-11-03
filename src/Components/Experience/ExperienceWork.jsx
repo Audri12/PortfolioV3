@@ -86,6 +86,12 @@ const ExperienceWork = () => {
       </div>
     </div>
 
+    {/* skill titlle */}
+    <div className='bg-black px-[5%] text-white font-aldrich py-12 flex justify-center'>
+      <h1 className='text-center text-4xl'>I'm currently looking to join a  <span className="bg-[#AC01C6] bg-clip-text text-transparent">cross-functional  </span>team
+ <br /><span className='text-2xl'>that values improving people's lives through accessible design</span></h1>
+    </div>
+
     {/* ///img part */}
     <div className="bg-black px-[5%] text-white font-aldrich py-12 flex justify-center">
   <img src={skills} className="w-3/6 " alt="skills" />
