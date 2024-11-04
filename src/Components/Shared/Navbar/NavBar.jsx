@@ -83,7 +83,7 @@ const NavBar = () => {
           ></span>
         </li>
         
-        <li
+        {/* <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
             activeIndex === 4 ? "text-white" : ""
           }`}
@@ -100,7 +100,7 @@ const NavBar = () => {
                 : "bg-transparent"
             }`}
           ></span>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

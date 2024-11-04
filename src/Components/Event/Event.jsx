@@ -6,7 +6,7 @@ import icon from "../../assets/iconClick.png";
 import './Event.css'
 
 
-const Project = () => {
+const Event = () => {
   return (
     <div className="bg-black px-[5%] font-aldrich pb-12" id="events">
       <TeamLead></TeamLead>
@@ -38,7 +38,7 @@ const Project = () => {
 
           {/* Image section */}
           <div className="gradient1">
-            <img src={projectImage} className="gradient1 w-11/12 h-full" />
+            <img src={projectImage} className="gradient1 w-[1200px] h-full" />
           </div>
         </div>
 
@@ -79,4 +79,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default Event;

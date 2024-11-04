@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Home/homeBanner.css'
-import NavBar from '../Shared/Navbar/Navbar'
+import NavBar from '../shared/Navbar/Navbar';
 
 
 
