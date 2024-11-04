@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Home/homeBanner.css'
-import NavBar from "../shared/Navbar/NavBar";
+import Navbar from '../Shared/Navbar/Navbar'
+
+
 
 
 
@@ -10,7 +12,7 @@ const HomeBanner = () => {
     <div id="home">
     <div  className="homebanner justify-center bg-black px-[5%] lg:px-[12%] font-aldrich lg:pb-40  ">
         <div className='px-0 lg:px-36 py-10'> 
-            <NavBar></NavBar>
+            <Navbar></Navbar>
         </div>
         
         <div className="grid gap-5 sm:grid-cols-1 lg:grid-cols-2  mt-14 ">
