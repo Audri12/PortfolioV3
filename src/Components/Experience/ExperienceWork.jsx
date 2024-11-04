@@ -7,7 +7,7 @@ const ExperienceWork = () => {
   return (
     <div>
       {/* EXPERIENCE Title */}
-      <div className="font-aldrich pb-12 flex justify-center items-center bg-black">
+      <div className="font-aldrich pb-12 flex justify-center items-center  px-[5%] lg:px-[12%] bg-black">
         <div className="experience-container">
           <h1 className="experience-text-outline">EXPERIENCE</h1>
           <h1 className="experience-text">EXPERIENCE</h1>
@@ -17,8 +17,8 @@ const ExperienceWork = () => {
         </div>
       </div>
       {/* tittle end */}
-         <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-14'>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-4 md:p-8 lg:px-[10%]">
+         <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-14  px-[5%] lg:px-[12%]'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         
         {/* First Section */}
         <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">

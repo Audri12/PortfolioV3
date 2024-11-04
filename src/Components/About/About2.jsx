@@ -4,7 +4,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import "./Experience.css";
 
-const About = () => {
+const About2 = () => {
   const [activeSection, setActiveSection] = useState("education");
   const [showMore, setShowMore] = useState(false);
 
@@ -302,4 +302,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default About2;
