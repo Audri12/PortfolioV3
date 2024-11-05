@@ -5,7 +5,7 @@ const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div>
+    <div className="fixed">
       <ul className="flex space-x-5 md:space-x-12 justify-center font-aldrich text-white p-4 px-8 border rounded-lg bg-white bg-opacity-30">
         <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${

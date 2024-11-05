@@ -173,10 +173,10 @@ const About = () => {
       {showMore && (
         <div className="bg-black text-white font-aldrich px-[5%] py-[5%]">
           {/* Navigation Tabs */}
-          <div className="flex flex-col md:flex-row border-gray-600 pb-4">
+          <div className="flex  flex-row border-gray-600 pb-4">
             <div
               onClick={() => setActiveSection("education")}
-              className={`text-4xl cursor-pointer ${
+              className={`text-xl md:text-4xl cursor-pointer ${
                 activeSection === "education" ? "gradient-border-b" : ""
               } mb-4 md:mb-0 mr-8`}
             >
@@ -184,7 +184,7 @@ const About = () => {
             </div>
             <div
               onClick={() => setActiveSection("experience")}
-              className={`text-4xl cursor-pointer ${
+              className={`text-xl md:text-4xl cursor-pointer ${
                 activeSection === "experience" ? "gradient-border-b" : ""
               } mb-4 md:mb-0 mr-8`}
             >
@@ -192,7 +192,7 @@ const About = () => {
             </div>
             <div
               onClick={() => setActiveSection("skills")}
-              className={`text-4xl cursor-pointer ${
+              className={`text-xl md:text-4xl cursor-pointer ${
                 activeSection === "skills" ? "gradient-border-b" : ""
               } mb-4 md:mb-0 mr-8`}
             >
