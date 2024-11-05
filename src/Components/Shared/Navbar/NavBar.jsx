@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaHome, FaUserAlt, FaCalendarAlt, FaPhoneAlt, FaEdit } from "react-icons/fa"; // import icons
 
-const NavBar = () => {
+const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
@@ -106,4 +106,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
