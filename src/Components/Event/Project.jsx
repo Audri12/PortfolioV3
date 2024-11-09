@@ -10,7 +10,7 @@ const Project = () => {
     <div className="bg-black font-aldrich px-[5%] pb-12" id="events">
       <TeamLead></TeamLead>
       <div className="">
-        <div className="">
+        <div className="fullpagebg sm:bg-none">
           {/* First Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center pb-6">
             {/* Text section */}
@@ -37,7 +37,7 @@ const Project = () => {
             </div>
 
             {/* Enlarged Image section */}
-            <div className="gradient1 relative overflow-hidden -ml-10 md:-ml-16">
+            <div className="gradient1 relative overflow-hidden -ml-0 md:-ml-16 lg:-ml-10">
               <img
                 src={projectImage}
                 className="w-[140%] h-[140%] object-cover"
@@ -46,9 +46,9 @@ const Project = () => {
           </div>
 
           {/* Second Part */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center pb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center pt-6 pb-6 lg:pt-48 lg:pb-48">
             {/* Enlarged Image section */}
-            <div className="relative overflow-hidden -mr-10 md:-mr-16">
+            <div className="relative overflow-hidden order-last md:order-first -mr-0 md:-mr-16 lg:-mr-10 ">
               <img
                 src={projectImage2}
                 className="w-[140%] h-[140%] object-cover"
@@ -72,7 +72,7 @@ const Project = () => {
                   playlists and more.
                 </p>
               </div>
-              <div className="flex lg:justify-end">
+              <div className="flex order-first md:order-last lg:justify-end">
                 <img src={icon} className="mr-5" />
                 <img src={icon} />
               </div>

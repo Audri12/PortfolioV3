@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div id="about">
       {/* About Title */}
-      <div className="font-aldrich pb-12 px-[5%] lg:px-[12%] flex justify-center items-center bg-black ">
+      <div className="font-aldrich pb-12 pt-12 px-[5%] lg:px-[12%] flex justify-center items-center bg-black ">
         <div className="about-container">
           <h1 className="about-text-outline">About Me</h1>
           <h1 className="about-text">About Me</h1>

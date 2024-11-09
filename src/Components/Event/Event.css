@@ -17,3 +17,12 @@
     background-size: cover;
     
   }
+
+  @media (min-width: 1024px) { /* lg breakpoint in Tailwind */
+    .fullpagebg {
+      background-image: url('../../assets/new.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right top;
+    }
+  }

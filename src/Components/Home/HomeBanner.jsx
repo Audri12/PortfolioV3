@@ -2,6 +2,10 @@ import React from 'react'
 import '../Home/homeBanner.css'
 import Navbar from '../Navbar/Navbar'
 import Navbar2 from '../Navbar/Navbar2'
+import Navbar3 from '../Navbar/Navbar3'
+import Navbar4 from '../Navbar/Navbar4'
+import Navbar5 from '../Navbar/Navbar5'
+import Navbar6 from '../Navbar/Navbar6'
 
 
 
@@ -14,8 +18,12 @@ const HomeBanner = () => {
     <div id="home">
     <div  className="homebanner justify-center bg-black px-[5%] lg:px-[12%] font-aldrich lg:pb-40  ">
         <div className='px-0 lg:px-36 py-10'> 
-            <Navbar></Navbar>
-            <Navbar2></Navbar2>
+            {/* <Navbar></Navbar> */}
+            {/* <Navbar2></Navbar2> */}
+            {/* <Navbar3></Navbar3> */}
+            {/* <Navbar4></Navbar4> */}
+            {/* <Navbar5></Navbar5> */}
+            <Navbar6></Navbar6>
         </div>
         
         <div className="grid gap-5 sm:grid-cols-1 lg:grid-cols-2  mt-14 ">

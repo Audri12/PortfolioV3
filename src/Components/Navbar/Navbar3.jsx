@@ -1,11 +1,35 @@
-import React, { useState } from "react";
-import { FaHome, FaUserAlt, FaCalendarAlt, FaPhoneAlt, FaEdit } from "react-icons/fa"; // import icons
+import React, { useState, useEffect } from "react";
+import { FaHome, FaUserAlt, FaCalendarAlt, FaPhoneAlt, FaArrowUp } from "react-icons/fa"; // Import the arrow icon
 
-const Navbar = () => {
+const Navbar3 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionIndex = Array.from(sections).indexOf(entry.target);
+            setActiveIndex(sectionIndex);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToTop = () => {
+    document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="">
+    <div>
       <ul className="flex space-x-5 md:space-x-12 justify-center font-aldrich text-white p-4 px-8 border rounded-lg bg-white bg-opacity-30">
         <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
@@ -25,6 +49,8 @@ const Navbar = () => {
             }`}
           ></span>
         </li>
+        
+        {/* Other navbar items */}
         
         <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
@@ -82,28 +108,19 @@ const Navbar = () => {
             }`}
           ></span>
         </li>
-        
-        {/* <li
-          className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
-            activeIndex === 4 ? "text-white" : ""
-          }`}
-          onClick={() => setActiveIndex(4)}
+
+        <li
+          className="relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff]"
+          onClick={scrollToTop}
         >
-          <a href="#blog" className="flex items-center space-x-2">
-            <FaEdit />
-            <span>Blog</span>
-          </a>
-          <span
-            className={`absolute left-[-10px] right-[-10px] bottom-0 h-0.5 transition-all duration-300 ease-in-out ${
-              activeIndex === 4
-                ? "bg-gradient-to-r from-[#5411ff] to-[#b000c3]"
-                : "bg-transparent"
-            }`}
-          ></span>
-        </li> */}
+          <button className="flex items-center space-x-2">
+            <FaArrowUp />
+            <span>To Top</span>
+          </button>
+        </li>
       </ul>
     </div>
   );
 };
 
-export default Navbar;
+export default Navbar3;
