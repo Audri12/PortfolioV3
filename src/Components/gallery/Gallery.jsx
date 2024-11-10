@@ -15,7 +15,7 @@ const Gallery = () => {
 
     return (
         <div className="bg-black">
-            <div className="font-aldrich pb-12 flex justify-center items-center bg-black px-[5%]">
+            <div className="font-aldrich pb-12 flex justify-center items-center bg-black px-[5%] lg:px-[12%]">
         
          
           <h2 className="text-4xl pt-32  pb-10 md:text-6xl font-bold uppercase tracking-wide bg-clip-text text-transparent bg-gradient-to-r from-[#5411ff] to-[#b000c3]">
@@ -23,7 +23,7 @@ const Gallery = () => {
           </h2>
        
       </div>
-            <div className="grid gap-8 row-gap-5 pb-36 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto px-[5%]">
+            <div className="grid gap-8 row-gap-5 pb-36 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto px-[5%]  lg:px-[12%]">
                 {cards.map((card) => (
                     <div key={card.id}> {/* Apply key prop here */}
                         <div className="relative w-full max-w-sm mx-auto">

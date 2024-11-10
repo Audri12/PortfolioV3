@@ -171,7 +171,7 @@ const About = () => {
 
       {/* About Content */}
       {showMore && (
-        <div className="bg-black text-white font-aldrich px-[5%] py-[5%]">
+        <div className="bg-black text-white font-aldrich px-[5%] lg:px-[12%] py-[5%]">
           {/* Navigation Tabs */}
           <div className="flex  flex-row border-gray-600 pb-4">
             <div

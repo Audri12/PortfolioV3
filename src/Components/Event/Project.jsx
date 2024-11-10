@@ -7,7 +7,7 @@ import "./Event.css";
 
 const Project = () => {
   return (
-    <div className="bg-black font-aldrich px-[5%] pb-12" id="events">
+    <div className="bg-black font-aldrich px-[5%] lg:px-[12%] pb-12" id="events">
       <TeamLead></TeamLead>
       <div className="">
         <div className="fullpagebg sm:bg-none">
