@@ -10,7 +10,7 @@ const Project = () => {
     <div className="bg-black font-aldrich px-[5%] lg:px-[12%] pb-12" id="events">
       <TeamLead></TeamLead>
       <div className="">
-        <div className="fullpagebg sm:bg-none">
+        <div className="fullpagebg pt-5 sm:bg-none">
           {/* First Part */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-center pb-6">
             {/* Text section */}
