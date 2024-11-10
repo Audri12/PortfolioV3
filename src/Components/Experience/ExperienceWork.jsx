@@ -1,6 +1,6 @@
 import React from 'react'
 import './ExperienceWork.css'
-import skills from '../../assets/skills2.png'
+import skills from '../../assets/skillIMg.png'
 
 
 const ExperienceWork = () => {
@@ -17,7 +17,7 @@ const ExperienceWork = () => {
         </div>
       </div>
       {/* tittle end */}
-         <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-14  px-[5%] lg:px-[12%]'>
+         <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-20  px-[5%] lg:px-[12%]'>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
         
         {/* First Section */}
@@ -93,7 +93,7 @@ const ExperienceWork = () => {
     </div>
 
     {/* ///img part */}
-    <div className="bg-black px-[5%] text-white font-aldrich py-12 flex justify-center">
+    <div className="bg-black px-[5%] text-white font-aldrich py-12 flex justify-center pb-6">
   <img src={skills} className="w-3/6 " alt="skills" />
 </div>
     </div>

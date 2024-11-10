@@ -22,7 +22,7 @@ const About = () => {
       </div>
       {/* //Tittle end */}
       {/* about first part  */}
-      <section className="bg-black text-white py-10  sm:px-10 md:px-20 font-aldrich">
+      <section className="bg-black text-white py-10   sm:px-10 md:px-20 font-aldrich">
         <div className="">
           {/* Top Section with Image and Text */}
           <div className="lg:flex lg:flex-row md:flex-row md:items-center lg:items-center gap-10">

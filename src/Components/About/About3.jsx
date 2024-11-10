@@ -2,7 +2,7 @@ import React from 'react'
 
 const About3 = () => {
   return (
-    <div><section className="bg-black text-white py-10  sm:px-10 md:px-20 font-aldrich">
+    <div><section className="bg-black text-white py-10  px-[5%] lg:px-[12%]  sm:px-10 md:px-20 font-aldrich">
     <div className="">
       {/* Top Section with Image and Text */}
       <div className="lg:flex lg:flex-row md:flex-row md:items-center lg:items-center gap-10">
@@ -10,7 +10,7 @@ const About3 = () => {
         <div className="relative w-full flex justify-center items-center">
           {/* Image */}
           <img
-            src="https://i.postimg.cc/L6p2kcVY/image-1.png" // replace this with your image path
+            src="https://i.postimg.cc/nrPXznL0/aboutImg.png" // replace this with your image path
             alt="Profile"
             className="rounded-xl object-cover shadow-lg lg:h-[560px] h-96 "
             style={{ width: "", height: "" }}
