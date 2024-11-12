@@ -19,8 +19,8 @@ const ExperienceWork = () => {
       {/* tittle end */}
       {/* animated part */}
 
-      <div className='MobbileCIB pt-48 py-5'>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 px-[10%]">
+      <div className='MobbileCIB pt-8 py-5'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8  py-5 pb-20  px-[5%] lg:px-[12%]">
 
         {/* First Card */}
         <div className="card bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-left">
@@ -91,11 +91,11 @@ const ExperienceWork = () => {
 
 
       {/* without animation  */}
-         <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-20  px-[5%] lg:px-[12%]'>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+         {/* <div className='MobbileCIB pt-20 md:pt-48 py-5 pb-20  px-[5%] lg:px-[12%]'>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 "> */}
         
         {/* First Section */}
-        <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+        {/* <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
             <div>
               <img src="https://i.postimg.cc/9XGyNfbN/Group-2.png" className='mt-2 mr-2 w-16 h-16 md:w-auto md:h-auto' alt="CIB Icon" />
@@ -108,10 +108,10 @@ const ExperienceWork = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Second Section */}
-        <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+        {/* <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
             <div>
               <img src="https://i.postimg.cc/vBGxJr3q/Group-1935.png" className='mt-2 mr-2 w-16 h-16 md:w-auto md:h-auto' alt="CIB Icon" />
@@ -124,10 +124,10 @@ const ExperienceWork = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Third Section */}
-        <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+        {/* <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
             <div>
               <img src="https://i.postimg.cc/25GSBP7G/Group-1938.png" className='mt-2 mr-2 w-16 h-16 md:w-auto md:h-auto' alt="CIB Icon" />
@@ -140,10 +140,10 @@ const ExperienceWork = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Fourth Section */}
-        <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
+        {/* <div className="bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-4 md:p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300">
           <div className='flex flex-col md:flex-row gap-4 md:gap-10'>
             <div>
               <img src="https://i.postimg.cc/2jsLmNcL/Icons.png" className='mt-2 mr-2 w-16 h-16 md:w-auto md:h-auto' alt="CIB Icon" />
@@ -158,10 +158,10 @@ const ExperienceWork = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
 
     {/* skill titlle */}
-    <div className='bg-black px-[5%] text-white font-aldrich py-12 flex justify-center'>
+    <div className='bg-black px-[5%] text-white font-aldrich py-14 flex justify-center'>
       <h1 className='text-center text-4xl'>I'm currently looking to join a  <span className="bg-[#AC01C6] bg-clip-text text-transparent">cross-functional  </span>team
  <br /><span className='text-2xl'>that values improving people's lives through accessible design</span></h1>
     </div>

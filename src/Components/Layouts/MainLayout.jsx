@@ -18,8 +18,8 @@ const MainLayout = () => {
       <HomeBanner></HomeBanner>
    
       <About></About>
-      <About3></About3>
-      <About4></About4>
+      {/* <About3></About3>
+      <About4></About4> */}
       <ExperienceWork></ExperienceWork>
       <Gallery></Gallery>
       <Project></Project>
