@@ -14,7 +14,7 @@ const Gallery = () => {
     }, []);
 
     return (
-        <div className="bg-black">
+        <div  id="gallery" className="bg-black">
             <div className="font-aldrich pb-12 flex justify-center items-center bg-black px-[5%] lg:px-[12%]">
         
          

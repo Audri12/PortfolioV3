@@ -36,4 +36,16 @@
   } */
 
   
+  @keyframes fill {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  .animate-fill {
+    animation: fill 2s ease-out;
+  }
   

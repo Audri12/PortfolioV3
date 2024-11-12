@@ -6,6 +6,8 @@ import Navbar3 from '../Navbar/Navbar3'
 import Navbar4 from '../Navbar/Navbar4'
 import Navbar5 from '../Navbar/Navbar5'
 import Navbar6 from '../Navbar/Navbar6'
+import CounterSection from './CounterSection'
+import ConnectionsCounter from './ConnectionsCounter'
 
 
 
@@ -57,13 +59,17 @@ const HomeBanner = () => {
 
 
                 {/* Connections Section */}
-                <div className='mt-6 justify-start text-start'>
+
+                {/* <div className='mt-6 justify-start text-start'>
                     <button className='border border-white flex p-3 rounded-lg bg-white bg-opacity-30 justify-start text-start'>
                     <span className='text-4xl mr-4 font-bold'>20,000+</span>
                     <p className='text-white'>Connections <br /> Across Bangladesh</p>
                     </button>
                    
-                </div>
+                </div> */}
+
+                <ConnectionsCounter></ConnectionsCounter>
+
             </div>
 
             {/* Image Section */}
@@ -82,7 +88,7 @@ const HomeBanner = () => {
         </div>
 
         {/* Experience and Achievements Section */}
-        <div className='grid grid-cols-2 sm:grid-cols-4 text-center  text-white border rounded-lg p-4 gap-6 mt-2'>
+        {/* <div className='grid grid-cols-2 sm:grid-cols-4 text-center  text-white border rounded-lg p-4 gap-6 mt-2'>
             <div>
                 <h3 className='text-2xl font-bold'>20+</h3>
                 <p>Years of Experience</p>
@@ -99,7 +105,8 @@ const HomeBanner = () => {
                 <h3 className='text-2xl font-bold'>300+</h3>
                 <p>Projects Completed</p>
             </div>
-        </div>
+        </div> */}
+        <CounterSection></CounterSection>
         
         
     </div>
