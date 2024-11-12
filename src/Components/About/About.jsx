@@ -4,6 +4,7 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import "./Experience.css";
 import AnimatedSection from "./AnimatedSection";
+import Education from "./Education";
 
 const About = () => {
   const [activeSection, setActiveSection] = useState("education");
@@ -57,68 +58,7 @@ const About = () => {
                 collaborative and combined with strategic thinking.
               </p>
               {/* Progress Bars Section */}
-              {/* <div className="mt-10">
-                Progress bars
-                <div className="flex flex-col md:flex-row justify-between mb-6 gap-10 md:gap-14 px-3">
-                  <div className="w-full md:w-1/2 pr-4">
-                    <div className="mb-2">Opportunity Created</div>
-                    <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                      <div
-                        className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full animate-fill"
-                        style={{ animationDuration: "2s", width: "92%" }}
-                      ></div>
-                    </div>
-                    <div className="ml-2 mt-[-4px] text-sm">92%</div>
-                  </div>
-                  <div className="w-full md:w-1/2 pl-4">
-                    <div className="mb-2">Skill Developed</div>
-                    <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                      <div
-                        className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full animate-fill"
-                        style={{ animationDuration: "2s", width: "95%" }}
-                      ></div>
-                    </div>
-                    <div className="ml-2 mt-[-4px] text-sm">95%</div>
-                  </div>
-                </div>
-                <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-14 px-3">
-                  <div className="w-full md:w-1/2 pr-4">
-                    <div className="mb-2">Time Spent</div>
-                    <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                      <div
-                        className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full animate-fill"
-                        style={{ animationDuration: "2s", width: "85%" }}
-                      ></div>
-                    </div>
-                    <div className="ml-2 mt-[-4px] text-sm">85%</div>
-                  </div>
-                  <div className="w-full md:w-1/2 pl-4">
-                    <div className="mb-2">Consulted</div>
-                    <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                      <div
-                        className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full animate-fill"
-                        style={{ animationDuration: "2s", width: "94%" }}
-                      ></div>
-                    </div>
-                    <div className="ml-2 mt-[-4px] text-sm">94%</div>
-                  </div>
-                </div>
-              </div> */}
-              {/* Bottom Section */}
-              {/* <div className="mt-10 flex flex-col justify-center md:justify-start items-center md:items-start">
-                <div className="text-3xl bg-gradient-to-r bg-clip-text from-[#D500EC] to-[#5101F8] text-transparent">
-                  ◆{" "}
-                  <span className="text-white text-lg">
-                    Embrace Endless Growth
-                  </span>
-                </div>
-                <div className="text-3xl bg-gradient-to-r bg-clip-text from-[#D500EC] to-[#5101F8] text-transparent">
-                  ◆{" "}
-                  <span className="text-white text-lg">
-                    Pursue Greatness Relentlessly
-                  </span>
-                </div>
-              </div> */}
+             
               <AnimatedSection></AnimatedSection>
             </div>
             
@@ -150,129 +90,64 @@ const About = () => {
         </div>
       )}
      {showMore && (
-  <div
-    className={`bg-black text-white font-aldrich px-[5%] lg:px-[12%] py-[5%] animate-fade-slide`}
-  >
-    {/* Navigation Tabs */}
-    <div className="flex flex-row border-gray-600 pb-4">
-      <div
-        onClick={() => setActiveSection("education")}
-        className={`text-xl md:text-4xl cursor-pointer ${
-          activeSection === "education" ? "gradient-border-b" : ""
-        } mb-4 md:mb-0 mr-8 transition-all duration-300`}
-      >
-        Education
-      </div>
-      <div
-        onClick={() => setActiveSection("experience")}
-        className={`text-xl md:text-4xl cursor-pointer ${
-          activeSection === "experience" ? "gradient-border-b" : ""
-        } mb-4 md:mb-0 mr-8 transition-all duration-300`}
-      >
-        Experience
-      </div>
-      <div
-        onClick={() => setActiveSection("skills")}
-        className={`text-xl md:text-4xl cursor-pointer ${
-          activeSection === "skills" ? "gradient-border-b" : ""
-        } mb-4 md:mb-0 transition-all duration-300`}
-      >
-        Skills
-      </div>
-    </div>
-    
-    {/* Conditionally Rendered Content */}
-    {activeSection === "education" && (
-      <div className="mt-8 font-aldrich">
-        {/* Education Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 justify-between space-y-8 md:space-y-0 md:space-x-8">
-          <div>
-            <div className="text-3xl">Education</div>
-            <h3 className="text-lg md:text-xl">
-              <span>BSc. & MSc in CS, CCNA, MCP, MCSA, MCSE, RHCT, RHCSA, RHCE</span>
-              <br />
-              Has extensive experience in Cybersecurity, IT Infrastructure, and Technology Training
-            </h3>
-            <ul className="mt-3 space-y-2">
-              <li className="flex items-center text-md">
-                <span className="h-4 w-4 bg-gradient-to-r from-[#AC01C6] to-[#5411FF] mr-2"></span>
-                Performed Excellent Result
-              </li>
-              <li className="flex items-center text-md">
-                <span className="h-4 w-4 bg-gradient-to-r from-[#AC01C6] to-[#5411FF] mr-2"></span>
-                Joined in Extra Curricular Activities
-              </li>
-              <li className="flex items-center text-md">
-                <span className="h-4 w-4 bg-gradient-to-r from-[#AC01C6] to-[#5411FF] mr-2"></span>
-                Wonderful achievement in sports
-              </li>
-            </ul>
-          </div>
-
-          {/* Passing Years */}
-          <div>
-            <h1 className="text-2xl sm:text-3xl mt-4 sm:mt-0 mb-5 md:mb-5">
-              Passing Years
-            </h1>
-            <div className="grid grid-cols-2">
-              <div>
-                <p className="text-base md:text-lg text-gray-300 gradient-border-b mb-5">
-                  2000-2002
-                </p>
-                <p className="text-base md:text-lg tracking-tighter">
-                  MSc. in Computer Science
-                </p>
-                <p className="mt-6 text-base md:text-lg text-gray-300 gradient-border-b mb-5">
-                  1994-1996
-                </p>
-                <p className="text-base md:text-lg tracking-tighter mb-5">
-                  Higher Secondary School Certificate
-                </p>
-              </div>
-              <div>
-                <p className="text-base md:text-lg text-gray-300 gradient-border-b">
-                  1995-2000
-                </p>
-                <p className="text-base md:text-lg md:mb-5 sm:mb-5">
-                  BSc. in Computer Science
-                </p>
-                <p className="mt-6 text-base md:text-lg text-gray-300 gradient-border-b">
-                  1992-1994
-                </p>
-                <p className="text-base md:text-lg">
-                  Secondary School Certificate
-                </p>
-              </div>
+        <div
+          className={`bg-black text-white font-aldrich px-[5%] lg:px-[12%] py-[5%] animate-fade-slide`}
+        >
+          {/* Navigation Tabs */}
+          <div className="flex flex-row border-gray-600 pb-4">
+            <div
+              onClick={() => setActiveSection("education")}
+              className={`text-xl md:text-4xl cursor-pointer ${
+                activeSection === "education" ? "gradient-border-b" : ""
+              } mb-4 md:mb-0 mr-8 transition-all duration-300`}
+            >
+              Education
+            </div>
+            <div
+              onClick={() => setActiveSection("experience")}
+              className={`text-xl md:text-4xl cursor-pointer ${
+                activeSection === "experience" ? "gradient-border-b" : ""
+              } mb-4 md:mb-0 mr-8 transition-all duration-300`}
+            >
+              Experience
+            </div>
+            <div
+              onClick={() => setActiveSection("skills")}
+              className={`text-xl md:text-4xl cursor-pointer ${
+                activeSection === "skills" ? "gradient-border-b" : ""
+              } mb-4 md:mb-0 transition-all duration-300`}
+            >
+              Skills
             </div>
           </div>
-        </div>
-      </div>
-    )}
+          
+          {/* Conditionally Rendered Content */}
+          
+          {activeSection === "education" && <Education />}
+          {activeSection === "experience" && <Experience />}
+          {activeSection === "skills" && <Skills />}
 
-    {activeSection === "experience" && <Experience />}
-    {activeSection === "skills" && <Skills />}
-
-    {/* Show Less Button */}
-    <div className="flex justify-center mt-4 py-[8%]">
-      <button
-        onClick={() => setShowMore(false)}
-        className="text-lg text-white bg-gradient-to-r from-[#5411ff] to-[#b000c3] px-4 py-2 rounded flex items-center gap-2 transition-all duration-300 ease-in-out"
-      >
-        Show Less
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-5 h-5 text-white"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fillRule="evenodd"
-            d="M5.23 12.79a.75.75 0 011.06 0L10 9.06l3.71 3.73a.75.75 0 001.06-1.06l-4.24-4.25a.75.75 0 00-1.06 0L5.23 11.73a.75.75 0 000 1.06z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </button>
-    </div>
+          {/* Show Less Button */}
+          <div className="flex justify-center mt-4 py-[8%]">
+            <button
+              onClick={() => setShowMore(false)}
+              className="text-lg text-white bg-gradient-to-r from-[#5411ff] to-[#b000c3] px-4 py-2 rounded flex items-center gap-2 transition-all duration-300 ease-in-out"
+            >
+              Show Less
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-5 h-5 text-white"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M5.23 12.79a.75.75 0 011.06 0L10 9.06l3.71 3.73a.75.75 0 001.06-1.06l-4.24-4.25a.75.75 0 00-1.06 0L5.23 11.73a.75.75 0 000 1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       )}
     </div>

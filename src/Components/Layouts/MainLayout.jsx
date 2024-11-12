@@ -11,6 +11,7 @@ import Project from "../Event/Project";
 import ScrollToTopButton from "../ScrollButton/ScrollButton";
 import About3 from "../About/About3";
 import About4 from "../About/About4";
+import About5 from "../About/About5";
 
 const MainLayout = () => {
   return (
@@ -18,8 +19,9 @@ const MainLayout = () => {
       <HomeBanner></HomeBanner>
    
       <About></About>
-      {/* <About3></About3>
-      <About4></About4> */}
+      {/* <About3></About3> */}
+      <About4></About4>
+      <About5></About5>
       <ExperienceWork></ExperienceWork>
       <Gallery></Gallery>
       <Project></Project>

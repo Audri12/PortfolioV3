@@ -23,7 +23,7 @@ const Gallery = () => {
           </h2>
        
       </div>
-            <div className="grid gap-8 row-gap-5 pb-36 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto px-[5%]  lg:px-[12%]">
+            <div className="grid gap-8 row-gap-5 pb-36 sm:grid-cols-2 lg:grid-cols-3 sm:mx-auto px-[5%]  lg:px-[12%]">
                 {cards.map((card) => (
                     <div key={card.id}> {/* Apply key prop here */}
                         <div className="relative w-full max-w-sm mx-auto">

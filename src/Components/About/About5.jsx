@@ -1,21 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../About/About.css";
 import Experience from "./Experience";
 import Skills from "./Skills";
-import "./Experience.css";
-import AnimatedSection from "./AnimatedSection";
 import Education from "./Education";
+import "./Experience.css";
 
-const About4 = () => {
+const About5 = () => {
   const [activeSection, setActiveSection] = useState("education");
   const [showMore, setShowMore] = useState(false);
-  const [animateProgressBar, setAnimateProgressBar] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
+  const progressBarRef = useRef(null);
 
   useEffect(() => {
-    if (showMore) {
-      setAnimateProgressBar(true);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(progressBarRef.current); // Stop observing after the first animation
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (progressBarRef.current) {
+      observer.observe(progressBarRef.current);
     }
-  }, [showMore]);
+
+    return () => {
+      if (progressBarRef.current) observer.unobserve(progressBarRef.current);
+    };
+  }, []);
 
   return (
     <div id="about">
@@ -29,48 +43,48 @@ const About4 = () => {
           </h2>
         </div>
       </div>
-      {/* Title end */}
-      {/* About first part */}
+      {/* Tittle end */}
+      {/* About Section */}
       <section className="bg-black text-white py-10 px-[5%] lg:px-[12%] sm:px-10 md:px-20 font-aldrich">
-        <div>
-          {/* Top Section with Image and Text */}
-          <div className="lg:flex lg:flex-row md:flex-row md:items-center lg:items-center gap-10">
-            {/* Left Side - Image */}
-            <div className="relative w-full flex justify-center items-center">
-              <img
-                src="https://i.postimg.cc/L6p2kcVY/image-1.png"
-                alt="Profile"
-                className="rounded-xl object-cover shadow-lg lg:h-[560px] h-96"
-              />
-              <a
-                href="#watch-intro"
-                className="absolute lg:right-[388px] lg:top-[55px] border-2 bg-black border-transparent bg-gradient-to-r from-[#AC01C6] to-[#5411FF] md:right-[146px] md:top-[55px] right-[251px] top-[14px] transform -translate-y-12 md:-translate-y-24 h-16 w-34 md:h-20 md:w-44 text-lg md:text-2xl tracking-tighter bg-clip-text text-transparent px-4 py-2 rounded-lg flex items-center rotate-90 origin-left"
-                style={{
-                  borderImage: "linear-gradient(90deg, #AC01C6, #5411FF) 1",
-                }}
-              >
-                Watch Intro
-              </a>
-            </div>
-            <div className="mt-5 text-center md:text-left lg:mr-10 md:mr-10">
-              <p className="text-3xl md:text-4xl font-[400] mb-6">
-                <span className="bg-gradient-to-r bg-clip-text from-[#AC01C6] to-[#5411FF] text-transparent">
-                  Knowledge
-                </span>{" "}
-                is the key that unlocks the way of possibility
-              </p>
-              <p className="text-md md:text-md tracking-wide px-2 font-[300]">
-                I’m a strong advocate for mentorship, guiding the next
-                generation of developers toward success. My approach is
-                collaborative and combined with strategic thinking.
-              </p>
-              {/* Progress Bars Section */}
-              {animateProgressBar && <AnimatedSection />}
+        <div className="lg:flex lg:flex-row md:flex-row md:items-center lg:items-center gap-10">
+          {/* Left Side - Image */}
+          <div className="relative w-full flex justify-center items-center">
+            <img
+              src="https://i.postimg.cc/L6p2kcVY/image-1.png"
+              alt="Profile"
+              className="rounded-xl object-cover shadow-lg lg:h-[560px] h-96"
+            />
+            <a
+              href="#watch-intro"
+              className="absolute lg:right-[388px] lg:top-[55px] border-2 bg-black border-transparent bg-gradient-to-r from-[#AC01C6] to-[#5411FF] md:right-[146px] md:top-[55px] right-[251px] top-[14px] transform -translate-y-12 md:-translate-y-24 h-16 w-34 md:h-20 md:w-44 text-lg md:text-2xl tracking-tighter bg-clip-text text-transparent px-4 py-2 rounded-lg flex items-center rotate-90 origin-left"
+              style={{
+                borderImage: "linear-gradient(90deg, #AC01C6, #5411FF) 1",
+              }}
+            >
+              Watch Intro
+            </a>
+          </div>
+          <div className="mt-5 text-center md:text-left lg:mr-10 md:mr-10">
+            <p className="text-3xl md:text-4xl font-[400] mb-6">
+              <span className="bg-gradient-to-r bg-clip-text from-[#AC01C6] to-[#5411FF] text-transparent">
+                Knowledge
+              </span>{" "}
+              is the key that unlocks the way of possibility
+            </p>
+            <p className="text-md md:text-md tracking-wide px-2 font-[300]">
+              I’m a strong advocate for mentorship, guiding the next generation
+              of developers toward success. My approach is collaborative and
+              combined with strategic thinking.
+            </p>
+            {/* Progress Bars */}
+            <div ref={progressBarRef} className="mt-4">
+              <ProgressBar label="React" target={90} isVisible={isVisible} />
+              <ProgressBar label="JavaScript" target={85} isVisible={isVisible} />
+              {/* Add more ProgressBars as needed */}
             </div>
           </div>
         </div>
       </section>
-      {/* End of about first part */}
       {/* Show More Button */}
       {!showMore && (
         <div className="flex justify-center font-aldrich bg-black pb-[8%]">
@@ -95,7 +109,9 @@ const About4 = () => {
         </div>
       )}
       {showMore && (
-        <div className={`bg-black text-white font-aldrich px-[5%] lg:px-[12%] py-[5%] animate-fade-slide`}>
+        <div
+          className="bg-black text-white font-aldrich px-[5%] lg:px-[12%] py-[5%] animate-fade-slide"
+        >
           {/* Navigation Tabs */}
           <div className="flex flex-row border-gray-600 pb-4">
             <div
@@ -123,12 +139,10 @@ const About4 = () => {
               Skills
             </div>
           </div>
-
           {/* Conditionally Rendered Content */}
           {activeSection === "education" && <Education />}
           {activeSection === "experience" && <Experience />}
           {activeSection === "skills" && <Skills />}
-
           {/* Show Less Button */}
           <div className="flex justify-center mt-4 py-[8%]">
             <button
@@ -156,4 +170,35 @@ const About4 = () => {
   );
 };
 
-export default About4;
+const ProgressBar = ({ label, target, isVisible }) => {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    if (isVisible) {
+      setProgress(0); // Reset progress each time it's visible
+      const interval = setInterval(() => {
+        setProgress((prev) => {
+          if (prev < target) return prev + 1;
+          clearInterval(interval);
+          return target;
+        });
+      }, 20); // Adjust this delay to control animation speed
+
+      return () => clearInterval(interval);
+    }
+  }, [target, isVisible]);
+
+  return (
+    <div className="mb-4">
+      <span className="text-lg font-medium">{label}</span>
+      <div className="h-2 bg-gray-300 rounded">
+        <div
+          style={{ width: `${progress}%` }}
+          className="h-full bg-gradient-to-r from-[#5411ff] to-[#b000c3] rounded"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default About5;

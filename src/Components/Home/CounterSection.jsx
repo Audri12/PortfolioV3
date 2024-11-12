@@ -22,7 +22,7 @@ const Counter = ({ end, label }) => {
 
     useEffect(() => {
         let start = 0;
-        const duration = 2000; // 2 seconds
+        const duration = 3000; // 3 seconds
         const increment = end / (duration / 16); // Approx. 60fps
         
         const counter = setInterval(() => {

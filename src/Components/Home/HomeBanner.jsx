@@ -8,6 +8,7 @@ import Navbar5 from '../Navbar/Navbar5'
 import Navbar6 from '../Navbar/Navbar6'
 import CounterSection from './CounterSection'
 import ConnectionsCounter from './ConnectionsCounter'
+import Navbar7 from '../Navbar/Navbar7'
 
 
 
@@ -25,7 +26,8 @@ const HomeBanner = () => {
             {/* <Navbar3></Navbar3> */}
             {/* <Navbar4></Navbar4> */}
             {/* <Navbar5></Navbar5> */}
-            <Navbar6></Navbar6>
+            {/* <Navbar6></Navbar6> */}
+            <Navbar7></Navbar7>
         </div>
         
         <div className="grid gap-5 sm:grid-cols-1 lg:grid-cols-2  mt-14 ">
