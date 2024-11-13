@@ -49,3 +49,37 @@
     animation: fill 2s ease-out;
   }
   
+/* for show more and less button  */
+
+/* CSS for the hidden state of the expandable content */
+.hidden-content {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease, font-size 0.3s ease;
+}
+
+/* CSS for the visible state */
+.visible-content {
+  opacity: 1;
+  max-height: 1000px; /* Adjust as needed */
+  font-size: inherit;
+  transition: opacity 0.3s ease, max-height 0.3s ease, font-size 0.3s ease;
+}
+
+/* Style for Show More and Show Less buttons */
+.toggle-button {
+  cursor: pointer;
+  padding: 0.5em 1em;
+  color: #fff;
+  background: linear-gradient(to right, #5411ff, #b000c3);
+  border-radius: 0.25em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  transition: background-color 0.3s ease;
+}
+.toggle-button:hover {
+  background: linear-gradient(to left, #5411ff, #b000c3);
+}

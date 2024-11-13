@@ -1,14 +1,18 @@
 .MobbileCIB{
-    background-image: url("../../assets/Gradient.png");
+    background-image: url("https://i.postimg.cc/hGJxt3B0/Gradient-1.png");
     background-repeat: repeat-y;
     background-color: black;
+    
+    
     background-position: center ;
+    
     height: 100%;
     width: 100%;
+    
     position: relative;
 }
 .background{
-    background-image: url("../../assets/Rectangle\ 983.png");
+    background-image: url("https://i.postimg.cc/8PP7Cndr/Rectangle-983.png");
   
     background-position: center ;
     
@@ -17,77 +21,62 @@
     
 }
 
-.experience-container {
-    position: relative;
-    text-align: center;
-  }
-  
-  .experience-text {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    z-index: 10;
-    color: black; /* Black color inside the text */
-  }
-  
-  .experience-text-outline {
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    color: transparent; /* Transparent fill */
-    -webkit-text-stroke: 5px #404040; /* Thin gray border */
-  }
 
-  @keyframes shimmer {
-    0% {
-      border-color: #693B93;
-      box-shadow: 0 0 4px #693B93, 0 0 10px #693B93, 0 0 20px #693B93;
-    }
-    50% {
-      border-color: #fff;
-      box-shadow: 0 0 8px #fff, 0 0 15px #693B93, 0 0 25px #fff;
-    }
-    100% {
-      border-color: #693B93;
-      box-shadow: 0 0 4px #693B93, 0 0 10px #693B93, 0 0 20px #693B93;
-    }
+.experience-container {
+  position: relative;
+  text-align: center;
+}
+
+
+/* /titlestyle */
+.experience-text {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 10;
+  color: black; /* Black color inside the text */
+}
+
+.experience-text-outline {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  color: transparent; /* Transparent fill */
+  -webkit-text-stroke: 5px #404040; /* Thin gray border */
+}
+
+/* Slide animations */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
   }
-  
-  .group-hover\:animate-shimmer:hover {
-    animation: shimmer 1.5s infinite;
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+}
+
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
   }
-  
-  @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  /* Classes for animation */
-  .animate-slide-in-left {
-    animation: slideInLeft 0.8s ease forwards;
-  }
-  
-  .animate-slide-in-right {
-    animation: slideInRight 0.8s ease forwards;
-  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
+}
