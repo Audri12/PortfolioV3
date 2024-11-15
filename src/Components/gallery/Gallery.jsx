@@ -28,7 +28,7 @@ const Gallery = () => {
                     <div key={card.id}> {/* Apply key prop here */}
                         <div className="relative w-full max-w-sm mx-auto">
                             <img src={card.image} alt={card.name} className="object-cover w-full h-full rounded shadow-lg" />
-                            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#5411ff] to-[#b000c3] bg-opacity-50 flex flex-col items-center justify-center text-center opacity-0 hover:opacity-30  transition-opacity duration-300 rounded-lg">
                                 <h1 className="text-xl text-white font-semibold">{card.name}</h1>
                                 <p className="pb-4 text-sm text-white">{card.description}</p>
                             </div>

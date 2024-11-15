@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaHome, FaUserAlt, FaCalendarAlt, FaPhoneAlt, FaEdit } from "react-icons/fa"; // import icons
+import { MdOutlineWorkOutline } from "react-icons/md";
 
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -45,6 +46,25 @@ const Navbar = () => {
           ></span>
         </li>
         
+        <li
+          className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
+            activeIndex === 2 ? "text-white" : ""
+          }`}
+          onClick={() => setActiveIndex(2)}
+        >
+          <a href="#events" className="flex items-center space-x-2">
+            <MdOutlineWorkOutline />
+            <span>WORK</span>
+          </a>
+          <span
+            className={`absolute left-[-10px] right-[-10px] bottom-0 h-0.5 transition-all duration-300 ease-in-out ${
+              activeIndex === 2
+                ? "bg-gradient-to-r from-[#5411ff] to-[#b000c3]"
+                : "bg-transparent"
+            }`}
+          ></span>
+        </li>
+
         <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
             activeIndex === 2 ? "text-white" : ""

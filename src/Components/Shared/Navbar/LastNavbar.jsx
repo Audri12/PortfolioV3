@@ -34,6 +34,18 @@ const LastNavbar = () => {
         
         <li
           className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
+            activeIndex === 3 ? "text-white" : ""
+          }`}
+          onClick={() => setActiveIndex(3)}
+        >
+          <a href="#contact" className="flex items-center space-x-2">
+            <FaPhoneAlt />
+            <span>Contact</span>
+          </a>
+        </li>
+        
+        <li
+          className={`relative h-full transition-all duration-200 ease-linear cursor-pointer hover:text-[#5411ff] ${
             activeIndex === 2 ? "text-white" : ""
           }`}
           onClick={() => setActiveIndex(2)}
